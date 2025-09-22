@@ -4,6 +4,7 @@
 2. **Integrantes**
 
 ## Objetivo
+Desarrollar una aplicacion movil nutricional que brinde a los usuarios herramientas personalizadas para mejorar sus habitos alimenticios y promover un estilo de vida diferente
 
 
 
