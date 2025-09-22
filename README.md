@@ -9,7 +9,7 @@ Desarrollar una aplicacion movil nutricional que brinde a los usuarios herramien
 
 
 ## Integrantes
-- **Informacion personal Integrante 2**
+- **Informacion personal Integrante 1**
 - _Nombre_: Caldera Gallegos Evelyn Fernanda
 - _correo electronico_:[23308060610294@cetis61.edu.mx]
 - _Especialidad_: Programacion
@@ -19,7 +19,7 @@ Desarrollar una aplicacion movil nutricional que brinde a los usuarios herramien
 
   
 
-- **Informacion personal Integrante 1**
+- **Informacion personal Integrante 2**
 - _Nombre_: Gurrola Suarez Joselyn Daniela
 - _correo electronico_:[23308060610671@cetis61.edu.mx]
 - _Especialidad_: Programacion
