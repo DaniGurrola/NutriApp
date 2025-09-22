@@ -9,12 +9,11 @@ Desarrollar una aplicacion movil nutricional que brinde a los usuarios herramien
 
 
 ## Integrantes
-- Caldera Gallegos Evelyn Fernanda
-- 17 años
-- 23308060610294@cetis61.edu.mx
-- programacion
-- CETis 61
-
+- **Informacion personal Integrante 2**
+- _Nombre_: Caldera Gallegos Evelyn Fernanda
+- _correo electronico_:[23308060610294@cetis61.edu.mx]
+- _Especialidad_: Programacion
+- _Institucion_: [CETis 61]
   
 - Gurrola Suarez Joselyn Daniela
 - **Informacion personal Integrante 1**
