@@ -13,5 +13,6 @@ Desarrollar una aplicacion movil nutricional que brinde a los usuarios herramien
 
   
 - Gurrola Suarez Joselyn Daniela
+- ![Texto alternativo]("C:\Users\SALA2-PC2\Downloads\img.jpg") 
 
 
