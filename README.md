@@ -17,6 +17,12 @@ Desarrollar una aplicacion movil nutricional que brinde a los usuarios herramien
 
   
 - Gurrola Suarez Joselyn Daniela
+- **Informacion personal Integrante 1**
+- _Nombre_: Gurrola Suarez Joselyn Daniela
+- _correo electronico_:[23308060610671@cetis61.edu.mx]
+- _Especialidad_: Programacion
+- _Institucion_: [CETis 61]
+
 
  ![Adobe Express - file](https://github.com/user-attachments/assets/66d5af9d-f2a5-4117-bf20-b82033b77123)
 
