@@ -301,6 +301,7 @@ I Graficas I
 
 ![img16](https://github.com/user-attachments/assets/42e34568-d474-43bc-a620-97412932deaa)
 
+![img17](https://github.com/user-attachments/assets/5760e749-e420-4204-bd67-8109238bea4e)
 
 
 
