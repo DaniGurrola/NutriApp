@@ -1,7 +1,8 @@
 ---
 # APPS NUTRICIONALES
 ---
-![IMG1](https://github.com/user-attachments/assets/191d2572-f0f0-4561-ba1d-31c6e20527f0)
+![img1 (1)](https://github.com/user-attachments/assets/b0474669-1c86-45b0-be5c-13e202da0259)
+
 
 Por:
 
@@ -116,9 +117,9 @@ de personalizar metas diarias de acuerdo con los objetivos físicos, el
 peso y el nivel de actividad, ofreciendo un seguimiento prácticamente
 profesional del progreso nutricional.
 
-![IMG2](https://github.com/user-attachments/assets/d779b7b9-a37a-4d32-b1b6-1397ba2a4405)
+![img2](https://github.com/user-attachments/assets/953695e5-d503-4097-bc1e-36864ead1bfe)
+![img3](https://github.com/user-attachments/assets/5241feae-0644-4d89-b000-95e31a29ae1d)
 
-![IMG3](https://github.com/user-attachments/assets/f74027d7-7014-4f9d-b7c7-54baeea55b16)
 
 Por otro lado, **Yazio** se presenta como una alternativa moderna y
 visualmente atractiva, enfocada en la motivación y la personalización.
@@ -131,9 +132,8 @@ intermitente, el descanso y la hidratación. Su diseño minimalista y
 amigable resulta muy intuitivo, permitiendo que el usuario se
 familiarice rápidamente con sus funciones.
 
-![IMG4](https://github.com/user-attachments/assets/2a638cea-b008-4b98-9b06-5aa8c9cafc9d)
-
-![IMG5](https://github.com/user-attachments/assets/0c3fd46d-87f5-4076-b61a-4cbe1bf6ffda)
+![img4](https://github.com/user-attachments/assets/a920695c-bbac-4e77-b1af-c45c70fdddb0)
+![img5](https://github.com/user-attachments/assets/92fce337-19d1-4884-a538-821d35593a32)
 
 El modelo de negocio de Yazio también es
 **freemium**. Su versión gratuita incluye el seguimiento básico de
@@ -171,9 +171,8 @@ innovador reside en el componente social, que fomenta la colaboración y
 el aprendizaje entre usuarios, elemento que podría explotarse más en
 otras aplicaciones de nutrición.
 
-![IMG6](https://github.com/user-attachments/assets/233a292a-9503-4266-bedc-4f482c58f759)
-
-![IMG7](https://github.com/user-attachments/assets/07ec4924-4eb9-4bc0-a97e-5e277891d9fe)
+![img6](https://github.com/user-attachments/assets/72c2a93b-daef-4844-9062-fb73c448fa05)
+![img7](https://github.com/user-attachments/assets/a93b033e-5dd9-43d2-ab92-ca419314f389)
 
 # Tabla comparativa
 
@@ -279,31 +278,36 @@ adaptadas a cada individuo.
 
 <https://forms.gle/u44iaEKePbWSXLU19>
 
-![IMG8](https://github.com/user-attachments/assets/08a12072-f24b-4bfe-bf92-4605868c7697)
-
-![IMG9](https://github.com/user-attachments/assets/2b86b344-4ed3-4691-8ca6-60d54ae5ad45)
-
-![IMG10](https://github.com/user-attachments/assets/6c2d87fa-e49a-4cd4-8ad4-d668f933dbbf)
-
-![IMG11](https://github.com/user-attachments/assets/299d5eb9-3727-49ab-adea-19d93f607c92)
-
-![IMG12](https://github.com/user-attachments/assets/db8f95ae-1953-4ea6-b4f2-e2e610661fdb)
-
-![IMG13](https://github.com/user-attachments/assets/9344bf9b-8be9-4a4f-acdb-5bbbcde54560)
-
-![IMG14](https://github.com/user-attachments/assets/a5dba75d-94e7-4d90-8514-fc50c69feacc)
-
-![IMG15](https://github.com/user-attachments/assets/39020a56-27a1-4ff1-9132-439723550cb4)
-
-![IMG16](https://github.com/user-attachments/assets/cd0f0f9c-9ba1-4800-b0bc-95a4d356fe71)
-
-![IMG17](https://github.com/user-attachments/assets/094acd14-7b90-4b29-bd4d-81c03f8cf958)
-
-![IMG18](https://github.com/user-attachments/assets/0011263b-e49a-471c-93a1-2807fa03186a)
-
-![IMG19](https://github.com/user-attachments/assets/8de25c6c-9fca-4f1f-b333-f29740e6e8f4)
-
-![IMG20](https://github.com/user-attachments/assets/d2ec7817-33d7-4108-8028-ab4176968286)
-
 I Graficas I
+
+![img8](https://github.com/user-attachments/assets/95422c41-b3e9-44f9-a6fd-e3faa9902557)
+
+![img9](https://github.com/user-attachments/assets/0d4be5d2-a5a8-429d-9936-bbcc2c282fb3)
+
+![img10](https://github.com/user-attachments/assets/cad2a381-7ee3-4b5f-ac35-6588b2669d11)
+
+![img11](https://github.com/user-attachments/assets/160a7007-07f1-4b7e-b6b5-4d9fa20ffc81)
+
+![img12](https://github.com/user-attachments/assets/8b07ccd1-b845-4edd-b2f1-39e3c3a0a7e0)
+
+![img13](https://github.com/user-attachments/assets/f52c97cf-3f26-4b03-ac89-a108a12f9f2f)
+
+![img14](https://github.com/user-attachments/assets/143e7bed-5ef4-4ee5-a849-18699371b9d8)
+
+![img15](https://github.com/user-attachments/assets/8fba3b95-d6ed-4abc-a016-f2a08f12a03c)
+
+![img16](https://github.com/user-attachments/assets/42e34568-d474-43bc-a620-97412932deaa)
+
+![img17](https://github.com/user-attachments/assets/5760e749-e420-4204-bd67-8109238bea4e)
+
+![img18](https://github.com/user-attachments/assets/af5d4bf0-c422-4666-ba2c-d8ef1ef42995)
+
+![img19](https://github.com/user-attachments/assets/0f8e433b-f7cd-4418-b1fc-41b789c33808)
+
+![img20](https://github.com/user-attachments/assets/12ec3cd3-9115-48f5-9baf-89efda71d909)
+
+
+
+
+
 
