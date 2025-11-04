@@ -133,9 +133,9 @@ intermitente, el descanso y la hidratación. Su diseño minimalista y
 amigable resulta muy intuitivo, permitiendo que el usuario se
 familiarice rápidamente con sus funciones.
 
-![IMG4](https://github.com/user-attachments/assets/2a638cea-b008-4b98-9b06-5aa8c9cafc9d)
+![img4](https://github.com/user-attachments/assets/a920695c-bbac-4e77-b1af-c45c70fdddb0)
 
-![IMG5](https://github.com/user-attachments/assets/0c3fd46d-87f5-4076-b61a-4cbe1bf6ffda)
+![img5](https://github.com/user-attachments/assets/92fce337-19d1-4884-a538-821d35593a32)
 
 El modelo de negocio de Yazio también es
 **freemium**. Su versión gratuita incluye el seguimiento básico de
