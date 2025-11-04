@@ -1,7 +1,8 @@
 ---
 # APPS NUTRICIONALES
 ---
-![IMG1](https://github.com/user-attachments/assets/191d2572-f0f0-4561-ba1d-31c6e20527f0)
+![img1 (1)](https://github.com/user-attachments/assets/b0474669-1c86-45b0-be5c-13e202da0259)
+
 
 Por:
 
