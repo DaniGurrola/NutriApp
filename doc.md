@@ -173,9 +173,9 @@ innovador reside en el componente social, que fomenta la colaboración y
 el aprendizaje entre usuarios, elemento que podría explotarse más en
 otras aplicaciones de nutrición.
 
-![IMG6](https://github.com/user-attachments/assets/233a292a-9503-4266-bedc-4f482c58f759)
+![img6](https://github.com/user-attachments/assets/72c2a93b-daef-4844-9062-fb73c448fa05)
 
-![IMG7](https://github.com/user-attachments/assets/07ec4924-4eb9-4bc0-a97e-5e277891d9fe)
+![img7](https://github.com/user-attachments/assets/a93b033e-5dd9-43d2-ab92-ca419314f389)
 
 # Tabla comparativa
 
