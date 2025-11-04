@@ -172,7 +172,6 @@ el aprendizaje entre usuarios, elemento que podría explotarse más en
 otras aplicaciones de nutrición.
 
 ![img6](https://github.com/user-attachments/assets/72c2a93b-daef-4844-9062-fb73c448fa05)
-
 ![img7](https://github.com/user-attachments/assets/a93b033e-5dd9-43d2-ab92-ca419314f389)
 
 # Tabla comparativa
