@@ -295,6 +295,7 @@ I Graficas I
 
 ![img13](https://github.com/user-attachments/assets/f52c97cf-3f26-4b03-ac89-a108a12f9f2f)
 
+![img14](https://github.com/user-attachments/assets/143e7bed-5ef4-4ee5-a849-18699371b9d8)
 
 
 
