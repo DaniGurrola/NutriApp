@@ -291,6 +291,13 @@ I Graficas I
 
 ![img11](https://github.com/user-attachments/assets/160a7007-07f1-4b7e-b6b5-4d9fa20ffc81)
 
+![img12](https://github.com/user-attachments/assets/8b07ccd1-b845-4edd-b2f1-39e3c3a0a7e0)
+
+
+
+
+
+
 
 
 
