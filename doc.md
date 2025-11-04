@@ -118,7 +118,6 @@ peso y el nivel de actividad, ofreciendo un seguimiento prácticamente
 profesional del progreso nutricional.
 
 ![img2](https://github.com/user-attachments/assets/953695e5-d503-4097-bc1e-36864ead1bfe)
-
 ![img3](https://github.com/user-attachments/assets/5241feae-0644-4d89-b000-95e31a29ae1d)
 
 
