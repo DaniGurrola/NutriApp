@@ -133,7 +133,6 @@ amigable resulta muy intuitivo, permitiendo que el usuario se
 familiarice rápidamente con sus funciones.
 
 ![img4](https://github.com/user-attachments/assets/a920695c-bbac-4e77-b1af-c45c70fdddb0)
-
 ![img5](https://github.com/user-attachments/assets/92fce337-19d1-4884-a538-821d35593a32)
 
 El modelo de negocio de Yazio también es
