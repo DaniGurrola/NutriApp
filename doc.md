@@ -117,9 +117,10 @@ de personalizar metas diarias de acuerdo con los objetivos físicos, el
 peso y el nivel de actividad, ofreciendo un seguimiento prácticamente
 profesional del progreso nutricional.
 
-![IMG2](https://github.com/user-attachments/assets/d779b7b9-a37a-4d32-b1b6-1397ba2a4405)
+![img2](https://github.com/user-attachments/assets/953695e5-d503-4097-bc1e-36864ead1bfe)
 
-![IMG3](https://github.com/user-attachments/assets/f74027d7-7014-4f9d-b7c7-54baeea55b16)
+![img3](https://github.com/user-attachments/assets/5241feae-0644-4d89-b000-95e31a29ae1d)
+
 
 Por otro lado, **Yazio** se presenta como una alternativa moderna y
 visualmente atractiva, enfocada en la motivación y la personalización.
