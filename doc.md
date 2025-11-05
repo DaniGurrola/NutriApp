@@ -5,9 +5,13 @@
 
 
 **Por:**
+
 **Caldera Gallegos Evelyn Fernanda.**
+
 **Gurrola Suárez Joselyn Daniela.**
+
 **Grupo 5'D**
+
 **03/11/25**
 
 # Aplicaciones de Nutrición: Funcionalidades, Enfoques y Ejemplos Populares
