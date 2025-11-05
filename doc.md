@@ -4,14 +4,10 @@
 ![img1 (1)](https://github.com/user-attachments/assets/b0474669-1c86-45b0-be5c-13e202da0259)
 
 
-**Por:
-
+**Por:**
 **Caldera Gallegos Evelyn Fernanda.**
-
 **Gurrola Suárez Joselyn Daniela.**
-
 **Grupo 5'D**
-
 **03/11/25**
 
 # Aplicaciones de Nutrición: Funcionalidades, Enfoques y Ejemplos Populares
