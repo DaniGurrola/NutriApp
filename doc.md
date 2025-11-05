@@ -227,11 +227,11 @@ adaptadas a cada individuo.
 
 ## 
 
-##  I Formulario I
+##  Formulario:
 
 <https://forms.gle/u44iaEKePbWSXLU19>
 
-## I Graficas I
+## Graficas:
 
 ![img8](https://github.com/user-attachments/assets/95422c41-b3e9-44f9-a6fd-e3faa9902557)
 ![img9](https://github.com/user-attachments/assets/0d4be5d2-a5a8-429d-9936-bbcc2c282fb3)
