@@ -6,9 +6,9 @@
 
 Por:
 
-Caldera Gallegos Evelyn Fernanda.
+**Caldera Gallegos Evelyn Fernanda.**
 
-Gurrola Suárez Joselyn Daniela.
+**Gurrola Suárez Joselyn Daniela.**
 
 Grupo 5'D
 
