@@ -278,32 +278,20 @@ adaptadas a cada individuo.
 
 <https://forms.gle/u44iaEKePbWSXLU19>
 
-I Graficas I
+## I Graficas I
 
 ![img8](https://github.com/user-attachments/assets/95422c41-b3e9-44f9-a6fd-e3faa9902557)
-
 ![img9](https://github.com/user-attachments/assets/0d4be5d2-a5a8-429d-9936-bbcc2c282fb3)
-
 ![img10](https://github.com/user-attachments/assets/cad2a381-7ee3-4b5f-ac35-6588b2669d11)
-
 ![img11](https://github.com/user-attachments/assets/160a7007-07f1-4b7e-b6b5-4d9fa20ffc81)
-
 ![img12](https://github.com/user-attachments/assets/8b07ccd1-b845-4edd-b2f1-39e3c3a0a7e0)
-
 ![img13](https://github.com/user-attachments/assets/f52c97cf-3f26-4b03-ac89-a108a12f9f2f)
-
 ![img14](https://github.com/user-attachments/assets/143e7bed-5ef4-4ee5-a849-18699371b9d8)
-
 ![img15](https://github.com/user-attachments/assets/8fba3b95-d6ed-4abc-a016-f2a08f12a03c)
-
 ![img16](https://github.com/user-attachments/assets/42e34568-d474-43bc-a620-97412932deaa)
-
 ![img17](https://github.com/user-attachments/assets/5760e749-e420-4204-bd67-8109238bea4e)
-
 ![img18](https://github.com/user-attachments/assets/af5d4bf0-c422-4666-ba2c-d8ef1ef42995)
-
 ![img19](https://github.com/user-attachments/assets/0f8e433b-f7cd-4418-b1fc-41b789c33808)
-
 ![img20](https://github.com/user-attachments/assets/12ec3cd3-9115-48f5-9baf-89efda71d909)
 
 
