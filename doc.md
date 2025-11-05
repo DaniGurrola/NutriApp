@@ -4,17 +4,17 @@
 ![img1 (1)](https://github.com/user-attachments/assets/b0474669-1c86-45b0-be5c-13e202da0259)
 
 
-Por:
+**Por:**
 
-Caldera Gallegos Evelyn Fernanda.
+**Caldera Gallegos Evelyn Fernanda.**
 
-Gurrola Suárez Joselyn Daniela.
+**Gurrola Suárez Joselyn Daniela.**
 
-Grupo 5'D
+**Grupo 5'D**
 
-03/11/25
+**03/11/25**
 
-# Aplicaciones de Nutrición: Funcionalidades, Enfoques y Ejemplos Populares
+# Aplicaciones de Nutrición: Funcionalidades, Enfoques y Ejemplos Populares:
 
 Las **aplicaciones de nutrición** se han convertido en una herramienta
 clave para muchas personas que buscan mejorar su salud y bienestar.
@@ -25,9 +25,9 @@ ofrecer una experiencia integral. Con la creciente demanda de soluciones
 más accesibles y eficaces, las apps de nutrición continúan evolucionando
 para adaptarse mejor a las necesidades de los usuarios.
 
-##  Análisis de Aplicaciones de Nutrición
+##  Análisis de Aplicaciones de Nutrición:
 
-### Introducción
+### Introducción:
 
 El interés por mantener una vida saludable ha crecido de manera
 exponencial durante los últimos años. En este contexto, las aplicaciones
@@ -50,7 +50,7 @@ permitirá comprender las tendencias actuales del mercado digital de la
 nutrición y las necesidades que todavía no han sido completamente
 satisfechas por las soluciones existentes.
 
-### Objetivos de la Investigación
+### Objetivos de la Investigación:
 
 El objetivo general de esta investigación es realizar un estudio
 comparativo y analítico de tres aplicaciones de nutrición con el fin de
@@ -73,7 +73,7 @@ Como objetivos específicos, se plantea:
 -   Detectar oportunidades de mejora o nuevas funciones que podrían
     aplicarse en un futuro desarrollo.
 
-### Metodología
+### Metodología:
 
 La metodología utilizada consistió en un **análisis exploratorio y
 comparativo**. Se descargaron y probaron las versiones más recientes de
@@ -86,7 +86,7 @@ cualitativo permitió obtener una visión integral de la experiencia del
 usuario y de las estrategias que emplean las empresas desarrolladoras
 para posicionar sus productos.
 
-### Análisis de Aplicaciones
+### Análisis de Aplicaciones:
 
 **MyFitnessPal** es una aplicación pionera en el ámbito de la nutrición
 digital y una de las más completas del mercado. Su funcionalidad
@@ -174,65 +174,19 @@ otras aplicaciones de nutrición.
 ![img6](https://github.com/user-attachments/assets/72c2a93b-daef-4844-9062-fb73c448fa05)
 ![img7](https://github.com/user-attachments/assets/a93b033e-5dd9-43d2-ab92-ca419314f389)
 
-# Tabla comparativa
+# Tabla comparativa:
 
-  -----------------------------------------------------------------------------
-  **Aspecto**         **MyFitnessPal**     **Yazio**           **FatSecret**
-  ------------------- -------------------- ------------------- ----------------
-  **Funcionalidades   Registro de          Registro de         Registro básico
-  principales**       alimentos y          comidas, cálculo de de alimentos y
-                      calorías, escaneo de calorías, planes    peso, diario
-                      códigos de barras,   alimenticios        alimenticio,
-                      seguimiento de       personalizados,     registro de
-                      macronutrientes y    recetas saludables, actividad
-                      ejercicios,          seguimiento de      física,
-                      sincronización con   ayuno intermitente. comunidad de
-                      wearables.                               usuarios.
+| **Aspecto** | **MyFitnessPal** | **Yazio** | **FatSecret** |
+| :--- | :--- | :--- | :--- |
+| **Funcionalidades principales** | Registro de alimentos y calorías, escaneo de códigos de barras, seguimiento de macronutrientes y ejercicios, sincronización con *wearables*. | Registro de comidas, cálculo de calorías, planes alimenticios personalizados, recetas saludables, seguimiento de ayuno intermitente. | Registro básico de alimentos y peso, diario alimenticio, registro de actividad física, comunidad de usuarios. |
+| **Experiencia de usuario** | Interfaz completa pero densa; ofrece gran cantidad de funciones que pueden abrumar a usuarios nuevos. | Diseño moderno, limpio y fácil de usar; navegación intuitiva y motivadora. | Interfaz simple y accesible; funcional pero con diseño menos atractivo visualmente. |
+| **Modelo de negocio** | Freemium: versión gratuita con anuncios y funciones básicas; suscripción *premium* para funciones avanzadas. | Freemium: versión gratuita limitada y plan *premium* con recetas exclusivas y planes personalizados. | Gratuita con publicidad; sin versión *premium*. |
+| **Puntos fuertes** | Amplia base de datos de alimentos, alta precisión, integración con dispositivos de salud y *fitness*. | Enfoque visual y motivacional, personalización de objetivos, interfaz intuitiva. | Totalmente gratuita, comunidad activa, facilidad de uso. |
+| **Puntos débiles** | Interfaz algo compleja, publicidad en la versión gratuita, dependencia de conexión a internet. | Base de datos menor, funciones importantes restringidas al plan *premium*. | Menor precisión nutricional, escasas funciones avanzadas, diseño básico. |
+| **Características innovadoras** | Escaneo de códigos de barras y sincronización con aplicaciones y dispositivos externos. | Seguimiento del ayuno intermitente y planes alimenticios personalizados. | Comunidad social integrada para apoyo y motivación entre usuarios. |
+| **Público objetivo** | Usuarios avanzados o comprometidos con el seguimiento detallado de su nutrición y actividad. | Usuarios interesados en una experiencia visual atractiva y en el bienestar integral. | Usuarios principiantes o personas que buscan una *app* simple y gratuita. |
 
-  **Experiencia de    Interfaz completa    Diseño moderno,     Interfaz simple
-  usuario**           pero densa; ofrece   limpio y fácil de   y accesible;
-                      gran cantidad de     usar; navegación    funcional pero
-                      funciones que pueden intuitiva y         con diseño menos
-                      abrumar a usuarios   motivadora.         atractivo
-                      nuevos.                                  visualmente.
-
-  **Modelo de         Freemium: versión    Freemium: versión   Gratuita con
-  negocio**           gratuita con         gratuita limitada y publicidad; sin
-                      anuncios y funciones plan premium con    versión premium.
-                      básicas; suscripción recetas exclusivas  
-                      premium para         y planes            
-                      funciones avanzadas. personalizados.     
-
-  **Puntos fuertes**  Amplia base de datos Enfoque visual y    Totalmente
-                      de alimentos, alta   motivacional,       gratuita,
-                      precisión,           personalización de  comunidad
-                      integración con      objetivos, interfaz activa,
-                      dispositivos de      intuitiva.          facilidad de
-                      salud y fitness.                         uso.
-
-  **Puntos débiles**  Interfaz algo        Base de datos       Menor precisión
-                      compleja, publicidad menor, funciones    nutricional,
-                      en la versión        importantes         escasas
-                      gratuita,            restringidas al     funciones
-                      dependencia de       plan premium.       avanzadas,
-                      conexión a internet.                     diseño básico.
-
-  **Características   Escaneo de códigos   Seguimiento del     Comunidad social
-  innovadoras**       de barras y          ayuno intermitente  integrada para
-                      sincronización con   y planes            apoyo y
-                      aplicaciones y       alimenticios        motivación entre
-                      dispositivos         personalizados.     usuarios.
-                      externos.                                
-
-  **Público           Usuarios avanzados o Usuarios            Usuarios
-  objetivo**          comprometidos con el interesados en una  principiantes o
-                      seguimiento          experiencia visual  personas que
-                      detallado de su      atractiva y en el   buscan una app
-                      nutrición y          bienestar integral. simple y
-                      actividad.                               gratuita.
-  -----------------------------------------------------------------------------
-
-### Conclusiones y Oportunidades
+### Conclusiones y Oportunidades:
 
 El análisis realizado permite concluir que, aunque todas las
 aplicaciones examinadas cumplen con la función esencial de ayudar al
@@ -274,11 +228,11 @@ adaptadas a cada individuo.
 
 ## 
 
-##  I Formulario I
+##  Formulario:
 
 <https://forms.gle/u44iaEKePbWSXLU19>
 
-## I Graficas I
+## Graficas:
 
 ![img8](https://github.com/user-attachments/assets/95422c41-b3e9-44f9-a6fd-e3faa9902557)
 ![img9](https://github.com/user-attachments/assets/0d4be5d2-a5a8-429d-9936-bbcc2c282fb3)
