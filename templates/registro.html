@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Registro - NutriApp{% endblock %}
+{% block content %}
+    <h2 class="fw-bold">Crea tu cuenta</h2>
+    <form class="text-start mx-auto" style="max-width: 400px;">
+        <div class="mb-3">
+            <label class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" placeholder="usuario@correo.com">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Contraseña</label>
+            <input type="password" class="form-control" placeholder="********">
+        </div>
+        <button type="submit" class="btn btn-light w-100">Registrarse</button>
+    </form>
+{% endblock %}

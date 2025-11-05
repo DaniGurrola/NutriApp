@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizar Comida</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">Analiza tu Comida</h1>
+    <form method="POST" action="/analizar" class="mt-4">
+        <div class="form-group">
+            <label for="tipo_comida">Tipo de comida (Ej. Ensalada, Pizza, Hamburguesa):</label>
+            <input type="text" class="form-control" id="tipo_comida" name="tipo_comida" placeholder="Ej. Ensalada">
+        </div>
+        <div class="form-group">
+            <label for="tamano">Tamaño de la porción:</label>
+            <select class="form-control" id="tamano" name="tamano">
+                <option value="pequena">Pequeña</option>
+                <option value="mediana">Mediana</option>
+                <option value="grande">Grande</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="frita">¿Es frita?</label>
+            <select class="form-control" id="frita" name="frita">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="verduras">¿Tiene muchas verduras?</label>
+            <select class="form-control" id="verduras" name="verduras">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="proteinas">¿Es rica en proteínas?</label>
+            <select class="form-control" id="proteinas" name="proteinas">
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Analizar Comida</button>
+    </form>
+
+    {% if resultado %}
+    <div class="mt-4 alert alert-info">
+        <h4>Resultado:</h4>
+        <p>{{ resultado }}</p>
+    </div>
+    {% endif %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
