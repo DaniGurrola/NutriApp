@@ -283,9 +283,7 @@ I Graficas I
 ![img8](https://github.com/user-attachments/assets/95422c41-b3e9-44f9-a6fd-e3faa9902557)
 ![img9](https://github.com/user-attachments/assets/0d4be5d2-a5a8-429d-9936-bbcc2c282fb3)
 ![img10](https://github.com/user-attachments/assets/cad2a381-7ee3-4b5f-ac35-6588b2669d11)
-
 ![img11](https://github.com/user-attachments/assets/160a7007-07f1-4b7e-b6b5-4d9fa20ffc81)
-
 ![img12](https://github.com/user-attachments/assets/8b07ccd1-b845-4edd-b2f1-39e3c3a0a7e0)
 
 ![img13](https://github.com/user-attachments/assets/f52c97cf-3f26-4b03-ac89-a108a12f9f2f)
