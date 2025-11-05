@@ -291,9 +291,7 @@ I Graficas I
 ![img16](https://github.com/user-attachments/assets/42e34568-d474-43bc-a620-97412932deaa)
 ![img17](https://github.com/user-attachments/assets/5760e749-e420-4204-bd67-8109238bea4e)
 ![img18](https://github.com/user-attachments/assets/af5d4bf0-c422-4666-ba2c-d8ef1ef42995)
-
 ![img19](https://github.com/user-attachments/assets/0f8e433b-f7cd-4418-b1fc-41b789c33808)
-
 ![img20](https://github.com/user-attachments/assets/12ec3cd3-9115-48f5-9baf-89efda71d909)
 
 
