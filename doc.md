@@ -176,62 +176,15 @@ otras aplicaciones de nutrición.
 
 # Tabla comparativa
 
-  -----------------------------------------------------------------------------
-  **Aspecto**         **MyFitnessPal**     **Yazio**           **FatSecret**
-  ------------------- -------------------- ------------------- ----------------
-  **Funcionalidades   Registro de          Registro de         Registro básico
-  principales**       alimentos y          comidas, cálculo de de alimentos y
-                      calorías, escaneo de calorías, planes    peso, diario
-                      códigos de barras,   alimenticios        alimenticio,
-                      seguimiento de       personalizados,     registro de
-                      macronutrientes y    recetas saludables, actividad
-                      ejercicios,          seguimiento de      física,
-                      sincronización con   ayuno intermitente. comunidad de
-                      wearables.                               usuarios.
-
-  **Experiencia de    Interfaz completa    Diseño moderno,     Interfaz simple
-  usuario**           pero densa; ofrece   limpio y fácil de   y accesible;
-                      gran cantidad de     usar; navegación    funcional pero
-                      funciones que pueden intuitiva y         con diseño menos
-                      abrumar a usuarios   motivadora.         atractivo
-                      nuevos.                                  visualmente.
-
-  **Modelo de         Freemium: versión    Freemium: versión   Gratuita con
-  negocio**           gratuita con         gratuita limitada y publicidad; sin
-                      anuncios y funciones plan premium con    versión premium.
-                      básicas; suscripción recetas exclusivas  
-                      premium para         y planes            
-                      funciones avanzadas. personalizados.     
-
-  **Puntos fuertes**  Amplia base de datos Enfoque visual y    Totalmente
-                      de alimentos, alta   motivacional,       gratuita,
-                      precisión,           personalización de  comunidad
-                      integración con      objetivos, interfaz activa,
-                      dispositivos de      intuitiva.          facilidad de
-                      salud y fitness.                         uso.
-
-  **Puntos débiles**  Interfaz algo        Base de datos       Menor precisión
-                      compleja, publicidad menor, funciones    nutricional,
-                      en la versión        importantes         escasas
-                      gratuita,            restringidas al     funciones
-                      dependencia de       plan premium.       avanzadas,
-                      conexión a internet.                     diseño básico.
-
-  **Características   Escaneo de códigos   Seguimiento del     Comunidad social
-  innovadoras**       de barras y          ayuno intermitente  integrada para
-                      sincronización con   y planes            apoyo y
-                      aplicaciones y       alimenticios        motivación entre
-                      dispositivos         personalizados.     usuarios.
-                      externos.                                
-
-  **Público           Usuarios avanzados o Usuarios            Usuarios
-  objetivo**          comprometidos con el interesados en una  principiantes o
-                      seguimiento          experiencia visual  personas que
-                      detallado de su      atractiva y en el   buscan una app
-                      nutrición y          bienestar integral. simple y
-                      actividad.                               gratuita.
-  -----------------------------------------------------------------------------
-
+| **Aspecto** | **MyFitnessPal** | **Yazio** | **FatSecret** |
+| :--- | :--- | :--- | :--- |
+| **Funcionalidades principales** | Registro de alimentos y calorías, escaneo de códigos de barras, seguimiento de macronutrientes y ejercicios, sincronización con *wearables*. | Registro de comidas, cálculo de calorías, planes alimenticios personalizados, recetas saludables, seguimiento de ayuno intermitente. | Registro básico de alimentos y peso, diario alimenticio, registro de actividad física, comunidad de usuarios. |
+| **Experiencia de usuario** | Interfaz completa pero densa; ofrece gran cantidad de funciones que pueden abrumar a usuarios nuevos. | Diseño moderno, limpio y fácil de usar; navegación intuitiva y motivadora. | Interfaz simple y accesible; funcional pero con diseño menos atractivo visualmente. |
+| **Modelo de negocio** | Freemium: versión gratuita con anuncios y funciones básicas; suscripción *premium* para funciones avanzadas. | Freemium: versión gratuita limitada y plan *premium* con recetas exclusivas y planes personalizados. | Gratuita con publicidad; sin versión *premium*. |
+| **Puntos fuertes** | Amplia base de datos de alimentos, alta precisión, integración con dispositivos de salud y *fitness*. | Enfoque visual y motivacional, personalización de objetivos, interfaz intuitiva. | Totalmente gratuita, comunidad activa, facilidad de uso. |
+| **Puntos débiles** | Interfaz algo compleja, publicidad en la versión gratuita, dependencia de conexión a internet. | Base de datos menor, funciones importantes restringidas al plan *premium*. | Menor precisión nutricional, escasas funciones avanzadas, diseño básico. |
+| **Características innovadoras** | Escaneo de códigos de barras y sincronización con aplicaciones y dispositivos externos. | Seguimiento del ayuno intermitente y planes alimenticios personalizados. | Comunidad social integrada para apoyo y motivación entre usuarios. |
+| **Público objetivo** | Usuarios avanzados o comprometidos con el seguimiento detallado de su nutrición y actividad. | Usuarios interesados en una experiencia visual atractiva y en el bienestar integral. | Usuarios principiantes o personas que buscan una *app* simple y gratuita. |
 ### Conclusiones y Oportunidades
 
 El análisis realizado permite concluir que, aunque todas las
