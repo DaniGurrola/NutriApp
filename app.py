@@ -16,6 +16,19 @@ def recetas():
 
 @app.route('/analisis', methods=['GET', 'POST'])
 def analisis():
+    resultado = None
+
+    if request.method == 'POST':
+        comida = request.form['comida']
+        calorias = int(request.form['calorias'])
+        grasas = int(request.form['grasas'])
+        azucar = int(request.form['azucar'])
+
+        if calorias < 300 and grasas < 10 and azucar < 5:
+            resultado = f"La comida '{comida}' es saludable."
+        else:
+            resultado = f"La comida '{comida}' no es saludable."
+
     return render_template('analisis.html', resultado=resultado)
 
 @app.route('/calculadora')
