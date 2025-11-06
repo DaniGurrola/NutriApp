@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Nutricional Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-[#f7f9fb] flex justify-center items-start min-h-screen p-5">
+
+    <div class="bg-white p-6 md:p-8 rounded-xl shadow-xl w-full max-w-sm border border-gray-100">
+        
+        <h1 class="text-3xl font-bold text-center text-green-700 mb-4">Nutri-Calculadora</h1>
+        <hr class="mb-6 border-green-200">
+
+        <div class="space-y-4">
+            <div>
+                <label for="foodName" class="block text-sm font-medium text-gray-600 mb-1">Alimento:</label>
+                <input type="text" id="foodName" value="Manzana" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+            </div>
+
+            <div>
+                <label for="weightGrams" class="block text-sm font-medium text-gray-600 mb-1">Peso Consumido (g):</label>
+                <input type="number" id="weightGrams" value="150" min="1" required class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+            </div>
+        </div>
+
+        <h2 class="text-lg font-semibold text-gray-700 mt-6 mb-3">Datos por 100g</h2>
+        
+        <div class="space-y-4">
+            <div>
+                <label for="calsPer100" class="block text-sm font-medium text-gray-600 mb-1">Calorías (Kcal):</label>
+                <input type="number" id="calsPer100" value="52" min="0" required class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+            </div>
+            
+            <div>
+                <label for="proteinPer100" class="block text-sm font-medium text-gray-600 mb-1">Proteínas (g):</label>
+                <input type="number" id="proteinPer100" value="0.3" min="0" required class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+            </div>
+            
+            <div>
+                <label for="carbsPer100" class="block text-sm font-medium text-gray-600 mb-1">Carbohidratos (g):</label>
+                <input type="number" id="carbsPer100" value="13.8" min="0" required class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+            </div>
+            
+            <div>
+                <label for="fatPer100" class="block text-sm font-medium text-gray-600 mb-1">Grasas (g):</label>
+                <input type="number" id="fatPer100" value="0.2" min="0" required class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500">
+            </div>
+        </div>
+        
+        <button onclick="calcular()" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700 transition duration-150 shadow-md">
+            Calcular
+        </button>
+
+        <div id="results" class="mt-6 pt-4 border-t border-gray-200">
+            <h2 class="text-xl font-semibold text-center text-green-600 mb-3">Resultados</h2>
+            <div class="text-sm space-y-2">
+                <p><strong>Alimento:</strong> <span id="outputFoodName" class="font-medium text-gray-800"></span></p>
+                <p><strong>Peso Total:</strong> <span id="outputWeight" class="font-medium text-gray-800"></span></p>
+                <hr class="border-gray-100">
+                <p class="text-base font-bold text-gray-800">Calorías Totales: <span id="outputCalories" class="text-green-600"></span> Kcal</p>
+                <p>Proteínas: <span id="outputProtein" class="font-medium text-gray-800"></span> g</p>
+                <p>Carbohidratos: <span id="outputCarbs" class="font-medium text-gray-800"></span> g</p>
+                <p>Grasas: <span id="outputFat" class="font-medium text-gray-800"></span> g</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calcular() {
+            const nombre = document.getElementById('foodName').value;
+            const peso = parseFloat(document.getElementById('weightGrams').value);
+            const cal100 = parseFloat(document.getElementById('calsPer100').value);
+            const prot100 = parseFloat(document.getElementById('proteinPer100').value);
+            const carb100 = parseFloat(document.getElementById('carbsPer100').value);
+            const gras100 = parseFloat(document.getElementById('fatPer100').value);
+
+            if (isNaN(peso) || peso <= 0) {
+                document.getElementById('outputCalories').textContent = 'Error: Poner un peso válido.';
+                document.getElementById('outputFoodName').textContent = '';
+                document.getElementById('outputWeight').textContent = '';
+                document.getElementById('outputProtein').textContent = '';
+                document.getElementById('outputCarbs').textContent = '';
+                document.getElementById('outputFat').textContent = '';
+                return; 
+            }
+
+            const factor = peso / 100;
+
+            const totalCals = cal100 * factor;
+            const totalProt = prot100 * factor;
+            const totalCarb = carb100 * factor;
+            const totalGras = gras100 * factor;
+
+            document.getElementById('outputFoodName').textContent = nombre;
+            document.getElementById('outputWeight').textContent = Math.round(peso) + ' g';
+            document.getElementById('outputCalories').textContent = Math.round(totalCals * 10) / 10; 
+            document.getElementById('outputProtein').textContent = Math.round(totalProt * 10) / 10;
+            document.getElementById('outputCarbs').textContent = Math.round(totalCarb * 10) / 10;
+            document.getElementById('outputFat').textContent = Math.round(totalGras * 10) / 10;
+        }
+
+        window.onload = calcular;
+    </script>
+
+</body>
+</html>
