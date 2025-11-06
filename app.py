@@ -31,9 +31,29 @@ def analisis():
 
     return render_template('analisis.html', resultado=resultado)
 
-@app.route('/calculadora')
+@app.route('/calculadora', methods=['GET', 'POST'])
 def calculadora():
-    return render_template('calculadora.html')
+    resultados = {}
+    
+    if request.method == 'POST':
+        food_name = request.form['foodName']
+        weight_grams = float(request.form['weightGrams'])
+        cals_per_100 = float(request.form['calsPer100'])
+        protein_per_100 = float(request.form['proteinPer100'])
+        carbs_per_100 = float(request.form['carbsPer100'])
+        fat_per_100 = float(request.form['fatPer100'])
+        
+        factor = weight_grams / 100
+
+        resultados['outputFoodName'] = food_name
+        resultados['outputWeight'] = f'{round(weight_grams)} g'
+        resultados['outputCalories'] = round_one_decimal(cals_per_100 * factor)
+        resultados['outputProtein'] = round_one_decimal(protein_per_100 * factor)
+        resultados['outputCarbs'] = round_one_decimal(carbs_per_100 * factor)
+        resultados['outputFat'] = round_one_decimal(fat_per_100 * factor)
+
+
+    return render_template('calculadora.html', resultados=resultados)
 
 @app.route('/registro')
 def registro():
