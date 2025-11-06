@@ -6,13 +6,50 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html')
+    """Ruta para el inicio de sesión. Maneja GET (mostrar formulario) y POST (procesar credenciales)."""
+    mensaje_error = None
+
+    if request.method == 'POST':
+        usuario = request.form.get('username')
+        clave = request.form.get('password')
+
+        if usuario == 'admin' and clave == '1234':
+            return redirect(url_for('index'))
+        else:
+            mensaje_error = "Credenciales inválidas. Inténtalo de nuevo."
+
+    return render_template('login.html', error=mensaje_error)
+
+
 
 @app.route('/recetas')
 def recetas():
-    return render_template('recetas.html')
+    """Ruta para mostrar recetas saludables de ejemplo."""
+    recetas_disponibles = [
+        {
+            'nombre': 'Ensalada de Quinoa y Aguacate',
+            'calorias': 350,
+            'ingredientes': ['Quinoa', 'Aguacate', 'Tomate cherry', 'Pepino', 'Limón', 'Aceite de Oliva'],
+            'preparacion': 'Cocinar la quinoa siguiendo las instrucciones del paquete. Picar el aguacate, tomate y pepino. Mezclar todos los ingredientes y aderezar con una vinagreta simple de limón, aceite de oliva y sal.'
+        },
+        {
+            'nombre': 'Salmón al Horno con Espárragos',
+            'calorias': 480,
+            'ingredientes': ['Filete de Salmón (150g)', 'Espárragos (1 manojo)', 'Aceite de oliva', 'Ajo en polvo', 'Pimienta'],
+            'preparacion': 'Precalentar el horno a 200°C. Sazonar el salmón con ajo, sal y pimienta. Rociar los espárragos con aceite. Hornear todo junto durante 12-15 minutos, hasta que el salmón esté cocido.'
+        },
+        {
+            'nombre': 'Tazón de Avena Nocturna (Overnight Oats)',
+            'calorias': 290,
+            'ingredientes': ['Avena en hojuelas', 'Leche (o bebida vegetal)', 'Semillas de Chía', 'Miel o Stevia', 'Fruta fresca'],
+            'preparacion': 'Mezclar la avena, leche, chía y edulcorante en un frasco. Refrigerar durante toda la noche. Por la mañana, añadir la fruta fresca y disfrutar.'
+        }
+    ]
+    
+    return render_template('recetas.html', recetas=recetas_disponibles)
+
 
 @app.route('/analisis', methods=['GET', 'POST'])
 def analisis():
