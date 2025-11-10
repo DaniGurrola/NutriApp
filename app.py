@@ -92,6 +92,10 @@ def calculadora():
 
     return render_template('calculadora.html', resultados=resultados)
 
+@app.route('/perfil')
+def perfil():
+    return render_template('perfil.html')
+
 @app.route('/registro')
 def registro():
     return render_template('registro.html')
