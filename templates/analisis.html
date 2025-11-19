@@ -1,72 +1,63 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analizar Comida</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light d-flex align-items-center" style="min-height: 100vh;">
+{% extends "base.html" %}
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-4 col-sm-8">
-                <div class="card shadow-sm p-4">
-                    <h2 class="text-center text-success mb-4">Analiza tu Comida</h2>
+{% block title %}Analizar Comida{% endblock %}
 
-                    <form method="POST" action="/analizar">
-                        <div class="form-group">
-                            <label for="tipo_comida">Tipo de comida (Ej. Ensalada, Pizza, Hamburguesa):</label>
-                            <input type="text" class="form-control" id="tipo_comida" name="tipo_comida" placeholder="Ej. Ensalada">
-                        </div>
-                        <div class="form-group">
-                            <label for="tamano">Tamaño de la porción:</label>
-                            <select class="form-control" id="tamano" name="tamano">
-                                <option value="pequena">Pequeña</option>
-                                <option value="mediana">Mediana</option>
-                                <option value="grande">Grande</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="frita">¿Es frita?</label>
-                            <select class="form-control" id="frita" name="frita">
-                                <option value="si">Sí</option>
-                                <option value="no">No</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="verduras">¿Tiene muchas verduras?</label>
-                            <select class="form-control" id="verduras" name="verduras">
-                                <option value="si">Sí</option>
-                                <option value="no">No</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="proteinas">¿Es rica en proteínas?</label>
-                            <select class="form-control" id="proteinas" name="proteinas">
-                                <option value="si">Sí</option>
-                                <option value="no">No</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-success btn-block">Analizar Comida</button>
-                    </form>
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-sm p-5" style="max-width: 500px; width: 100%; border: 2px solid #28a745; border-radius: 1rem;">
+        <h2 class="text-center text-success mb-4">Analiza tu Comida</h2>
 
-                    {% if resultado %}
-                    <div class="mt-4 alert alert-info">
-                        <h4>Resultado:</h4>
-                        <p>{{ resultado }}</p>
-                    </div>
-                    {% endif %}
-                </div>
+        <form method="POST" action="/analizar">
+            <div class="form-group mb-4">
+                <label for="tipo_comida" class="fw-bold">Tipo de comida (Ej. Ensalada, Pizza, Hamburguesa):</label>
+                <input type="text" class="form-control border-2 border-success" id="tipo_comida" name="tipo_comida" placeholder="Ej. Ensalada" required>
             </div>
+
+            <div class="form-group mb-4">
+                <label for="tamano" class="fw-bold">Tamaño de la porción:</label>
+                <select class="form-control border-2 border-success" id="tamano" name="tamano" required>
+                    <option value="pequena">Pequeña</option>
+                    <option value="mediana">Mediana</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4">
+                <label for="frita" class="fw-bold">¿Es frita?</label>
+                <select class="form-control border-2 border-success" id="frita" name="frita" required>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4">
+                <label for="verduras" class="fw-bold">¿Tiene muchas verduras?</label>
+                <select class="form-control border-2 border-success" id="verduras" name="verduras" required>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-4">
+                <label for="proteinas" class="fw-bold">¿Es rica en proteínas?</label>
+                <select class="form-control border-2 border-success" id="proteinas" name="proteinas" required>
+                    <option value="si">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-success btn-block w-100 py-3" style="font-size: 1.2rem; border: 2px solid #28a745; border-radius: 1rem;">
+                Analizar Comida
+            </button>
+        </form>
+
+        {% if resultado %}
+        <div class="mt-4 alert alert-info">
+            <h4>Resultado:</h4>
+            <p>{{ resultado }}</p>
         </div>
+        {% endif %}
     </div>
+</div>
+{% endblock %}
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-</body>
-</html>
-
-    

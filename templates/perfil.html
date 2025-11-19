@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil del Usuario Interactivo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <style>
-        body { background-color: #f8f9fa; }
-        .container { margin-top: 50px; max-width: 650px; }
-        .profile-picture { 
-            width: 100px; height: 100px; border-radius: 50%; 
-            object-fit: cover; margin-bottom: 15px; border: 3px solid white; 
-        }
-        .edit-mode {
-            display: none;
-        }
-    </style>
-</head>
-<body>
+{% extends "base.html" %}
 
+{% block content %}
     <div class="container rounded-3 shadow p-4 bg-white">
         <h1 class="text-center mb-5 text-secondary">Mi Perfil</h1>
 
@@ -27,7 +8,7 @@
             
             <div id="view-profile">
                 <div class="card-header bg-primary text-white text-center">
-                    <img src="https://placehold.co/100x100/CCCCCC/333333?text=Foto" alt="Foto de Perfil" class="profile-picture">
+                    <img src="https://placehold.co/100x100/CCCCCC/333333?text=Foto" alt="Foto de Perfil" class="profile-picture rounded-circle mb-2">
                     <h2 id="display-name">Juan Pérez</h2>
                 </div>
 
@@ -53,15 +34,15 @@
 
                     <div class="d-grid gap-2 mt-4">
                         <button class="btn btn-primary" onclick="toggleEdit(true)">
-                            <i class="bi bi-pencil-square"></i> **Editar Perfil**
+                            <i class="bi bi-pencil-square"></i> Editar Perfil
                         </button>
                     </div>
                 </div>
             </div> 
 
-            <div id="edit-profile" class="edit-mode">
+            <div id="edit-profile" class="edit-mode" style="display: none;">
                 <div class="card-header bg-success text-white text-center">
-                    <img src="https://placehold.co/100x100/CCCCCC/333333?text=Foto" alt="Foto de Perfil" class="profile-picture">
+                    <img src="https://placehold.co/100x100/CCCCCC/333333?text=Foto" alt="Foto de Perfil" class="profile-picture rounded-circle mb-2">
                     <h3 class="mt-2">Modificar Datos</h3>
                 </div>
                 <div class="card-body">
@@ -99,7 +80,7 @@
                         
                         <div class="d-grid gap-2 mt-4">
                             <button type="button" class="btn btn-success" onclick="saveChanges()">
-                                <i class="bi bi-save"></i> **Guardar Cambios**
+                                <i class="bi bi-save"></i> Guardar Cambios
                             </button>
                             <button type="button" class="btn btn-secondary" onclick="toggleEdit(false)">
                                 <i class="bi bi-x-circle"></i> Cancelar
@@ -113,6 +94,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
 
     <script>
         function toggleEdit(isEditing) {
@@ -127,11 +109,11 @@
                 document.getElementById('input-weight').value = document.getElementById('display-weight').textContent.replace(' kg', '').trim();
                 document.getElementById('input-allergies').value = document.getElementById('display-allergies').textContent.trim();
 
-                viewDiv.classList.add('edit-mode');
-                editDiv.classList.remove('edit-mode');
+                viewDiv.style.display = 'none';
+                editDiv.style.display = 'block';
             } else {
-                viewDiv.classList.remove('edit-mode');
-                editDiv.classList.add('edit-mode');
+                viewDiv.style.display = 'block';
+                editDiv.style.display = 'none';
             }
         }
 
@@ -155,6 +137,5 @@
             alert('¡Perfil actualizado con éxito! (Simulación en el navegador. Los datos se perderán al recargar la página)');
         }
     </script>
+{% endblock %}
 
-</body>
-</html>
