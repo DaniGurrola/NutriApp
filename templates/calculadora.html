@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6 Calculadoras Nutricionales</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
+{% extends "base.html" %}
 
+{% block title %}Calculadoras Nutricionales{% endblock %}
+
+{% block content %}
     <div class="container my-5">
         <h1 class="text-center text-success mb-5">Calculadoras Nutricionales</h1>
         
@@ -17,15 +12,33 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6 mb-3"><label for="pesoTMB" class="form-label text-success">Peso (kg):</label><input type="number" id="pesoTMB" class="form-control" placeholder="Ej: 70" required></div>
-                    <div class="col-md-6 mb-3"><label for="alturaTMB" class="form-label text-success">Altura (cm):</label><input type="number" id="alturaTMB" class="form-control" placeholder="Ej: 175" required></div>
+                    <div class="col-md-6 mb-3">
+                        <label for="pesoTMB" class="form-label text-success">Peso (kg):</label>
+                        <input type="number" id="pesoTMB" class="form-control" placeholder="Ej: 70" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="alturaTMB" class="form-label text-success">Altura (cm):</label>
+                        <input type="number" id="alturaTMB" class="form-control" placeholder="Ej: 175" required>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mb-3"><label for="edadTMB" class="form-label text-success">Edad (años):</label><input type="number" id="edadTMB" class="form-control" placeholder="Ej: 30" required></div>
-                    <div class="col-md-6 mb-3"><label for="generoTMB" class="form-label text-success">Género:</label><select id="generoTMB" class="form-select"><option value="hombre">Hombre</option><option value="mujer">Mujer</option></select></div>
+                    <div class="col-md-6 mb-3">
+                        <label for="edadTMB" class="form-label text-success">Edad (años):</label>
+                        <input type="number" id="edadTMB" class="form-control" placeholder="Ej: 30" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="generoTMB" class="form-label text-success">Género:</label>
+                        <select id="generoTMB" class="form-select">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                    </div>
                 </div>
                 <button onclick="calcularTMB()" class="btn btn-success w-100">Calcular TMB</button>
-                <div class="mt-3 p-3 bg-light rounded border border-success"><p class="mb-0 text-success">Resultado TMB:</p><strong id="resultadoTMB" class="h4">0 kcal/día</strong></div>
+                <div class="mt-3 p-3 bg-light rounded border border-success">
+                    <p class="mb-0 text-success">Resultado TMB:</p>
+                    <strong id="resultadoTMB" class="h4">0 kcal/día</strong>
+                </div>
             </div>
         </div>
         
@@ -35,12 +48,27 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6 mb-3"><label for="pesoGET" class="form-label text-success">Peso (kg):</label><input type="number" id="pesoGET" class="form-control" placeholder="Ej: 70" required></div>
-                    <div class="col-md-6 mb-3"><label for="alturaGET" class="form-label text-success">Altura (cm):</label><input type="number" id="alturaGET" class="form-control" placeholder="Ej: 175" required></div>
+                    <div class="col-md-6 mb-3">
+                        <label for="pesoGET" class="form-label text-success">Peso (kg):</label>
+                        <input type="number" id="pesoGET" class="form-control" placeholder="Ej: 70" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="alturaGET" class="form-label text-success">Altura (cm):</label>
+                        <input type="number" id="alturaGET" class="form-control" placeholder="Ej: 175" required>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mb-3"><label for="edadGET" class="form-label text-success">Edad (años):</label><input type="number" id="edadGET" class="form-control" placeholder="Ej: 30" required></div>
-                    <div class="col-md-6 mb-3"><label for="generoGET" class="form-label text-success">Género:</label><select id="generoGET" class="form-select"><option value="hombre">Hombre</option><option value="mujer">Mujer</option></select></div>
+                    <div class="col-md-6 mb-3">
+                        <label for="edadGET" class="form-label text-success">Edad (años):</label>
+                        <input type="number" id="edadGET" class="form-control" placeholder="Ej: 30" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="generoGET" class="form-label text-success">Género:</label>
+                        <select id="generoGET" class="form-select">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="actividadGET" class="form-label text-success">Nivel de Actividad:</label>
@@ -53,7 +81,10 @@
                     </select>
                 </div>
                 <button onclick="calcularGET()" class="btn btn-success w-100">Calcular GET</button>
-                <div class="mt-3 p-3 bg-light rounded border border-success"><p class="mb-0 text-success">Resultado GET (Calorías Mantenimiento):</p><strong id="resultadoGET" class="h4">0 kcal/día</strong></div>
+                <div class="mt-3 p-3 bg-light rounded border border-success">
+                    <p class="mb-0 text-success">Resultado GET (Calorías Mantenimiento):</p>
+                    <strong id="resultadoGET" class="h4">0 kcal/día</strong>
+                </div>
             </div>
         </div>
         
@@ -63,11 +94,21 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-6 mb-3"><label for="pesoIMC" class="form-label text-success">Peso (kg):</label><input type="number" id="pesoIMC" class="form-control" placeholder="Ej: 70" required></div>
-                    <div class="col-md-6 mb-3"><label for="alturaIMC" class="form-label text-success">Altura (cm):</label><input type="number" id="alturaIMC" class="form-control" placeholder="Ej: 175" required></div>
+                    <div class="col-md-6 mb-3">
+                        <label for="pesoIMC" class="form-label text-success">Peso (kg):</label>
+                        <input type="number" id="pesoIMC" class="form-control" placeholder="Ej: 70" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="alturaIMC" class="form-label text-success">Altura (cm):</label>
+                        <input type="number" id="alturaIMC" class="form-control" placeholder="Ej: 175" required>
+                    </div>
                 </div>
                 <button onclick="calcularIMC()" class="btn btn-success w-100">Calcular IMC</button>
-                <div class="mt-3 p-3 bg-light rounded border border-success"><p class="mb-0 text-success">Resultado IMC:</p><strong id="resultadoIMC" class="h4">0.00</strong><span id="clasificacionIMC"></span></div>
+                <div class="mt-3 p-3 bg-light rounded border border-success">
+                    <p class="mb-0 text-success">Resultado IMC:</p>
+                    <strong id="resultadoIMC" class="h4">0.00</strong>
+                    <span id="clasificacionIMC"></span>
+                </div>
             </div>
         </div>
 
@@ -76,7 +117,10 @@
                 <h2 class="h5 mb-0">4. Distribución de Macronutrientes (Macros)</h2>
             </div>
             <div class="card-body">
-                <div class="mb-3"><label for="caloriasMacros" class="form-label text-success">Total de Calorías Diarias (kcal):</label><input type="number" id="caloriasMacros" class="form-control" placeholder="Ej: 2000" required></div>
+                <div class="mb-3">
+                    <label for="caloriasMacros" class="form-label text-success">Total de Calorías Diarias (kcal):</label>
+                    <input type="number" id="caloriasMacros" class="form-control" placeholder="Ej: 2000" required>
+                </div>
                 <div class="mb-3">
                     <label for="distribucionMacros" class="form-label text-success">Distribución (P/C/G):</label>
                     <select id="distribucionMacros" class="form-select">
@@ -86,7 +130,10 @@
                     </select>
                 </div>
                 <button onclick="calcularMacros()" class="btn btn-success w-100">Calcular Macros</button>
-                <div class="mt-3 p-3 bg-light rounded border border-success"><p class="mb-0 text-success">Resultado Gramos:</p><strong id="resultadoMacros" class="h6"></strong></div>
+                <div class="mt-3 p-3 bg-light rounded border border-success">
+                    <p class="mb-0 text-success">Resultado Gramos:</p>
+                    <strong id="resultadoMacros" class="h6"></strong>
+                </div>
             </div>
         </div>
 
@@ -95,13 +142,34 @@
                 <h2 class="h5 mb-0">5. Porcentaje de Grasa Corporal (US Navy)</h2>
             </div>
             <div class="card-body">
-                <div class="mb-3"><label for="generoGrasa" class="form-label text-success">Género:</label><select id="generoGrasa" class="form-select"><option value="H">Hombre</option><option value="M">Mujer</option></select></div>
-                <div class="mb-3"><label for="alturaGrasa" class="form-label text-success">Altura (cm):</label><input type="number" id="alturaGrasa" class="form-control" placeholder="Ej: 175" required></div>
-                <div class="mb-3"><label for="cuelloGrasa" class="form-label text-success">Circunferencia Cuello (cm):</label><input type="number" id="cuelloGrasa" class="form-control" placeholder="Ej: 38" required></div>
-                <div class="mb-3"><label for="cinturaGrasa" class="form-label text-success">Circunferencia Cintura (cm):</label><input type="number" id="cinturaGrasa" class="form-control" placeholder="Ej: 90" required></div>
-                <div class="mb-3 mujer-solo"><label for="caderaGrasa" class="form-label text-success">Circunferencia Cadera (cm):</label><input type="number" id="caderaGrasa" class="form-control" placeholder="Ej: 100" required></div>
+                <div class="mb-3">
+                    <label for="generoGrasa" class="form-label text-success">Género:</label>
+                    <select id="generoGrasa" class="form-select">
+                        <option value="H">Hombre</option>
+                        <option value="M">Mujer</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="alturaGrasa" class="form-label text-success">Altura (cm):</label>
+                    <input type="number" id="alturaGrasa" class="form-control" placeholder="Ej: 175" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cuelloGrasa" class="form-label text-success">Circunferencia Cuello (cm):</label>
+                    <input type="number" id="cuelloGrasa" class="form-control" placeholder="Ej: 38" required>
+                </div>
+                <div class="mb-3">
+                    <label for="cinturaGrasa" class="form-label text-success">Circunferencia Cintura (cm):</label>
+                    <input type="number" id="cinturaGrasa" class="form-control" placeholder="Ej: 90" required>
+                </div>
+                <div class="mb-3 mujer-solo">
+                    <label for="caderaGrasa" class="form-label text-success">Circunferencia Cadera (cm):</label>
+                    <input type="number" id="caderaGrasa" class="form-control" placeholder="Ej: 100" required>
+                </div>
                 <button onclick="calcularGrasa()" class="btn btn-success w-100">Calcular % Grasa</button>
-                <div class="mt-3 p-3 bg-light rounded border border-success"><p class="mb-0 text-success">Resultado % Grasa:</p><strong id="resultadoGrasa" class="h4">0.00%</strong></div>
+                <div class="mt-3 p-3 bg-light rounded border border-success">
+                    <p class="mb-0 text-success">Resultado % Grasa:</p>
+                    <strong id="resultadoGrasa" class="h4">0.00%</strong>
+                </div>
             </div>
         </div>
 
@@ -110,16 +178,23 @@
                 <h2 class="h5 mb-0">6. Requerimiento de Agua (Hidratación)</h2>
             </div>
             <div class="card-body">
-                <div class="mb-3"><label for="pesoAgua" class="form-label text-success">Peso (kg):</label><input type="number" id="pesoAgua" class="form-control" placeholder="Ej: 70" required></div>
+                <div class="mb-3">
+                    <label for="pesoAgua" class="form-label text-success">Peso (kg):</label>
+                    <input type="number" id="pesoAgua" class="form-control" placeholder="Ej: 70" required>
+                </div>
                 <button onclick="calcularAgua()" class="btn btn-success w-100">Calcular Agua</button>
-                <div class="mt-3 p-3 bg-light rounded border border-success"><p class="mb-0 text-success">Resultado Mínimo Diario:</p><strong id="resultadoAgua" class="h4">0.00 L</strong><p class="mt-2 text-secondary mb-0">(Esta es una estimación base que no considera ejercicio intenso o clima caluroso)</p></div>
+                <div class="mt-3 p-3 bg-light rounded border border-success">
+                    <p class="mb-0 text-success">Resultado Mínimo Diario:</p>
+                    <strong id="resultadoAgua" class="h4">0.00 L</strong>
+                    <p class="mt-2 text-secondary mb-0">(Esta es una estimación base que no considera ejercicio intenso o clima caluroso)</p>
+                </div>
             </div>
         </div>
 
     </div>
+{% endblock %}
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+{% block scripts %}
     <script>
         function obtenerValor(id) {
             const valor = parseFloat(document.getElementById(id).value);
@@ -284,7 +359,6 @@
             toggleCadera();
             generoGrasaSelect.addEventListener('change', toggleCadera);
         });
-
     </script>
-</body>
-</html>
+{% endblock %}
+
