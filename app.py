@@ -8,7 +8,6 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    """Ruta para el inicio de sesión. Maneja GET (mostrar formulario) y POST (procesar credenciales)."""
     mensaje_error = None
 
     if request.method == 'POST':
@@ -26,7 +25,6 @@ def login():
 
 @app.route('/recetas')
 def recetas():
-    """Ruta para mostrar recetas saludables de ejemplo."""
     recetas_disponibles = [
         {
             'nombre': 'Ensalada de Quinoa y Aguacate',
