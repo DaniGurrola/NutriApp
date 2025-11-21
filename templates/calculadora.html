@@ -44,35 +44,35 @@
         
         <div class="card mb-4 border-success">
             <div class="card-header bg-success text-white">
-                <h2 class="h5 mb-0">2. Gasto Energético Total (GET) / Calorías Diarias</h2>
+                <h2 class="h5 mb-0">2. Gasto Calórico Total (GCT) / Calorías Diarias</h2>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="pesoGET" class="form-label text-success">Peso (kg):</label>
-                        <input type="number" id="pesoGET" class="form-control" placeholder="Ej: 70" required>
+                        <label for="pesoGCT" class="form-label text-success">Peso (kg):</label>
+                        <input type="number" id="pesoGCT" class="form-control" placeholder="Ej: 70" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="alturaGET" class="form-label text-success">Altura (cm):</label>
-                        <input type="number" id="alturaGET" class="form-control" placeholder="Ej: 175" required>
+                        <label for="alturaGCT" class="form-label text-success">Altura (cm):</label>
+                        <input type="number" id="alturaGCT" class="form-control" placeholder="Ej: 175" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="edadGET" class="form-label text-success">Edad (años):</label>
-                        <input type="number" id="edadGET" class="form-control" placeholder="Ej: 30" required>
+                        <label for="edadGCT" class="form-label text-success">Edad (años):</label>
+                        <input type="number" id="edadGCT" class="form-control" placeholder="Ej: 30" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="generoGET" class="form-label text-success">Género:</label>
-                        <select id="generoGET" class="form-select">
+                        <label for="generoGCT" class="form-label text-success">Género:</label>
+                        <select id="generoGCT" class="form-select">
                             <option value="hombre">Hombre</option>
                             <option value="mujer">Mujer</option>
                         </select>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="actividadGET" class="form-label text-success">Nivel de Actividad:</label>
-                    <select id="actividadGET" class="form-select">
+                    <label for="actividadGCT" class="form-label text-success">Nivel de Actividad:</label>
+                    <select id="actividadGCT" class="form-select">
                         <option value="1.2">1. Sedentario (poco o ningún ejercicio)</option>
                         <option value="1.375">2. Ligero (ejercicio 1-3 días/semana)</option>
                         <option value="1.55">3. Moderado (ejercicio 3-5 días/semana)</option>
@@ -80,13 +80,16 @@
                         <option value="1.9">5. Muy Alto (ejercicio intenso diario)</option>
                     </select>
                 </div>
-                <button onclick="calcularGET()" class="btn btn-success w-100">Calcular GET</button>
+        
+                <button onclick="calcularGCT()" class="btn btn-success w-100">Calcular GCT</button>
+        
                 <div class="mt-3 p-3 bg-light rounded border border-success">
-                    <p class="mb-0 text-success">Resultado GET (Calorías Mantenimiento):</p>
-                    <strong id="resultadoGET" class="h4">0 kcal/día</strong>
+                    <p class="mb-0 text-success">Resultado GCT (Calorías Mantenimiento):</p>
+                    <strong id="resultadoGCT" class="h4">0 kcal/día</strong>
                 </div>
             </div>
         </div>
+        
         
         <div class="card mb-4 border-success">
             <div class="card-header bg-success text-white">
@@ -139,39 +142,62 @@
 
         <div class="card mb-4 border-success">
             <div class="card-header bg-success text-white">
-                <h2 class="h5 mb-0">5. Porcentaje de Grasa Corporal (US Navy)</h2>
+                <h2 class="h5 mb-0">5. Peso Ideal</h2>
             </div>
+        
             <div class="card-body">
+        
                 <div class="mb-3">
-                    <label for="generoGrasa" class="form-label text-success">Género:</label>
-                    <select id="generoGrasa" class="form-select">
+                    <label for="generoPesoIdeal" class="form-label text-success">Género:</label>
+                    <select id="generoPesoIdeal" class="form-select">
                         <option value="H">Hombre</option>
                         <option value="M">Mujer</option>
                     </select>
                 </div>
+        
                 <div class="mb-3">
-                    <label for="alturaGrasa" class="form-label text-success">Altura (cm):</label>
-                    <input type="number" id="alturaGrasa" class="form-control" placeholder="Ej: 175" required>
+                    <label for="alturaPesoIdeal" class="form-label text-success">Altura (cm):</label>
+                    <input type="number" id="alturaPesoIdeal" class="form-control" placeholder="Ej: 170" required>
                 </div>
-                <div class="mb-3">
-                    <label for="cuelloGrasa" class="form-label text-success">Circunferencia Cuello (cm):</label>
-                    <input type="number" id="cuelloGrasa" class="form-control" placeholder="Ej: 38" required>
-                </div>
-                <div class="mb-3">
-                    <label for="cinturaGrasa" class="form-label text-success">Circunferencia Cintura (cm):</label>
-                    <input type="number" id="cinturaGrasa" class="form-control" placeholder="Ej: 90" required>
-                </div>
-                <div class="mb-3 mujer-solo">
-                    <label for="caderaGrasa" class="form-label text-success">Circunferencia Cadera (cm):</label>
-                    <input type="number" id="caderaGrasa" class="form-control" placeholder="Ej: 100" required>
-                </div>
-                <button onclick="calcularGrasa()" class="btn btn-success w-100">Calcular % Grasa</button>
+        
+                <button onclick="calcularPesoIdeal()" class="btn btn-success w-100">
+                    Calcular Peso Ideal
+                </button>
+        
                 <div class="mt-3 p-3 bg-light rounded border border-success">
-                    <p class="mb-0 text-success">Resultado % Grasa:</p>
-                    <strong id="resultadoGrasa" class="h4">0.00%</strong>
+                    <p class="mb-0 text-success">Peso Ideal Estimado:</p>
+                    <strong id="resultadoPesoIdeal" class="h4">0 kg</strong>
                 </div>
+        
             </div>
         </div>
+        
+        <script>
+        function calcularPesoIdeal() {
+            const genero = document.getElementById("generoPesoIdeal").value;
+            const altura = parseFloat(document.getElementById("alturaPesoIdeal").value);
+        
+            if (!altura || altura <= 0) {
+                document.getElementById("resultadoPesoIdeal").textContent = "Datos inválidos";
+                return;
+            }
+        
+            const pulgadas = altura / 2.54;
+            const base = 60;
+            let peso;
+        
+            if (genero === "H") {
+                peso = 50 + 2.3 * (pulgadas - base);
+            } else {
+                peso = 45.5 + 2.3 * (pulgadas - base);
+            }
+        
+            document.getElementById("resultadoPesoIdeal").textContent = 
+                Math.max(peso, 0).toFixed(1) + " kg";
+        }
+        </script>
+        
+        
 
         <div class="card mb-4 border-success">
             <div class="card-header bg-success text-white">
@@ -198,11 +224,12 @@
     <script>
         function obtenerValor(id) {
             const valor = parseFloat(document.getElementById(id).value);
-            if (isNaN(valor) || valor <= 0) {
+            if (isNaN(valor)) {
                 return null;
             }
             return valor;
         }
+        
 
         function calcularTMB() {
             const peso = obtenerValor('pesoTMB');
