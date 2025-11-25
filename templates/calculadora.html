@@ -252,29 +252,29 @@
             document.getElementById('resultadoTMB').textContent = `${Math.round(tmb)} kcal/día`;
         }
 
-        function calcularGET() {
-            const peso = obtenerValor('pesoGET');
-            const altura = obtenerValor('alturaGET');
-            const edad = obtenerValor('edadGET');
-            const genero = document.getElementById('generoGET').value;
-            const factorActividad = parseFloat(document.getElementById('actividadGET').value);
+        function calcularGCT() {
+            const peso = parseFloat(document.getElementById('pesoGCT').value);
+            const altura = parseFloat(document.getElementById('alturaGCT').value);
+            const edad = parseFloat(document.getElementById('edadGCT').value);
+            const genero = document.getElementById('generoGCT').value;
+            const factorActividad = parseFloat(document.getElementById('actividadGCT').value);
             let tmb = 0;
-
+        
             if (!peso || !altura || !edad) {
-                document.getElementById('resultadoGET').textContent = "Error: Ingrese valores válidos.";
+                document.getElementById('resultadoGCT').textContent = "Error: Ingrese valores válidos.";
                 return;
             }
-
+        
             if (genero === 'hombre') {
-                tmb = 66 + (13.7 * peso) + (5 * altura) - (6.8 * edad);
+                tmb = 10 * peso + 6.25 * altura - 5 * edad + 5;
             } else {
-                tmb = 655 + (9.6 * peso) + (1.8 * altura) - (4.7 * edad);
+                tmb = 10 * peso + 6.25 * altura - 5 * edad - 161;
             }
-
-            const get = tmb * factorActividad;
-            document.getElementById('resultadoGET').textContent = `${Math.round(get)} kcal/día`;
+        
+            const gct = tmb * factorActividad;
+            document.getElementById('resultadoGCT').textContent = `${Math.round(gct)} kcal/día`;
         }
-
+        
         function calcularIMC() {
             const peso = obtenerValor('pesoIMC');
             const alturaCm = obtenerValor('alturaIMC');
