@@ -1,6 +1,18 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
+import pymysql
+
 
 app = Flask(__name__)
+
+def get_connection():
+    return pymysql.connect(
+        host='localhost',     
+        user='root',       
+        password='',         
+        db='usuariosdb',
+        cursorclass=pymysql.cursors.DictCursor
+    )
+
 
 @app.route('/')
 def index():
@@ -19,7 +31,7 @@ def login():
         else:
             mensaje_error = "Credenciales inválidas. Inténtalo de nuevo."
 
-    return render_template('login.html', error=mensaje_error).
+    return render_template('login.html', error=mensaje_error)
 
 
 
@@ -94,9 +106,31 @@ def calculadora():
 def perfil():
     return render_template('perfil.html')
 
-@app.route('/registro')
+@app.route('/registro', methods=['GET', 'POST'])
 def registro():
+    if request.method == 'POST':
+        try:
+            nombre = request.form['nombre']
+            email = request.form['email']
+            password = request.form['password']
+
+            conn = get_connection()
+            with conn.cursor() as cursor:
+                sql = "INSERT INTO usuarios (nombre, email, password) VALUES (%s, %s, %s)"
+                cursor.execute(sql, (nombre, email, password))
+            conn.commit()
+
+            print("GUARDADO OK") 
+
+            return redirect('/') 
+
+        except Exception as e:
+            print("ERROR:", e) 
+            return "Error: " + str(e)
+
     return render_template('registro.html')
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
