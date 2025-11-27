@@ -3,6 +3,7 @@ import pymysql
 
 
 app = Flask(__name__)
+app.secret_key = "mi_clave_secreta" 
 
 def get_connection():
     return pymysql.connect(
@@ -20,18 +21,30 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    mensaje_error = None
-
     if request.method == 'POST':
-        usuario = request.form.get('username')
-        clave = request.form.get('password')
+        email = request.form['email']
+        password = request.form['password']
 
-        if usuario == 'admin' and clave == '1234':
-            return redirect(url_for('index'))
+        conn = get_connection()
+        with conn.cursor() as cursor:
+            sql = "SELECT * FROM usuarios WHERE email=%s AND password=%s"
+            cursor.execute(sql, (email, password))
+            user = cursor.fetchone()
+
+        if user:
+            session['user_id'] = user['id']
+            session['user_name'] = user['nombre']
+            return redirect('/') 
         else:
-            mensaje_error = "Credenciales inválidas. Inténtalo de nuevo."
+            return "Correo o contraseña incorrectos"
 
-    return render_template('login.html', error=mensaje_error)
+    return render_template('login.html')
+
+@app.route('/logout')
+def logout():
+    session.clear()  
+    return redirect('/')
+
 
 
 
@@ -126,7 +139,7 @@ def registro():
 
         except Exception as e:
             print("ERROR:", e) 
-            return "Error: " + str(e)
+            return "Error: " + redirect('/')
 
     return render_template('registro.html')
 

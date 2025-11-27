@@ -11,13 +11,17 @@
         background-position: center;
     "
 >
-    <h1 class="display-4 fw-bold">Bienvenido a NutriApp</h1>
-    <p class="lead">
+    {% if session.get('user_id') %}
+        <h1 class="display-4 fw-bold">Bienvenido, {{ session.user_name }}!</h1>
+    {% else %}
+        <h1 class="display-4 fw-bold">Bienvenido a NutriApp</h1>
+        <a href="{{ url_for('registro') }}" class="btn btn-light btn-lg mt-4">Registrate ahora!</a>
+    {% endif %}
+
+    <p class="lead mt-3">
         Tu compañero ideal para un estilo de vida saludable y equilibrado.
         ¡Comienza hoy mismo!
     </p>
-    <a href="{{ url_for('registro') }}" class="btn btn-light btn-lg mt-4">Registrate ahora!</a>
-
 </div>
 
 <div class="container my-5">
@@ -48,7 +52,7 @@
                 <img width="300" src="{{ url_for('static', filename='imagenes/tips.jpeg') }}" alt="tips" />
                 <div class="card-body">
                     <h5 class="card-title">Analisis de tus comidas</h5>
-                    <p class="card-text">Accede a un pequeño analisis que te dira si es saludable o no.</p>
+                    <p class="card-text">Accede a un pequeño análisis que te dirá si es saludable o no.</p>
                 </div>
             </div>
         </div>
@@ -59,4 +63,3 @@
     <p>&copy; Joselyn Gurrola y Evelyn Caldera 5'D</p>
 </footer>
 {% endblock %}
-
