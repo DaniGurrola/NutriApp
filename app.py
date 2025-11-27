@@ -19,7 +19,7 @@ def login():
         else:
             mensaje_error = "Credenciales inválidas. Inténtalo de nuevo."
 
-    return render_template('login.html', error=mensaje_error)
+    return render_template('login.html', error=mensaje_error).
 
 
 
