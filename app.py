@@ -122,26 +122,21 @@ def perfil():
 @app.route('/registro', methods=['GET', 'POST'])
 def registro():
     if request.method == 'POST':
-        try:
-            nombre = request.form['nombre']
-            email = request.form['email']
-            password = request.form['password']
+        nombre = request.form['nombre']
+        email = request.form['email']
+        password = request.form['password']
 
-            conn = get_connection()
-            with conn.cursor() as cursor:
-                sql = "INSERT INTO usuarios (nombre, email, password) VALUES (%s, %s, %s)"
-                cursor.execute(sql, (nombre, email, password))
-            conn.commit()
+        conn = get_connection()
+        with conn.cursor() as cursor:
+            sql = "INSERT INTO usuarios (nombre, email, password) VALUES (%s, %s, %s)"
+            cursor.execute(sql, (nombre, email, password))
+        conn.commit()
 
-            print("GUARDADO OK") 
 
-            return redirect('/') 
-
-        except Exception as e:
-            print("ERROR:", e) 
-            return "Error: " + redirect('/')
+        return redirect('/')  
 
     return render_template('registro.html')
+
 
 
 
