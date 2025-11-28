@@ -91,6 +91,30 @@ def analisis():
 
     return render_template('analisis.html', resultado=resultado)
 
+@app.route('/tmb')
+def tmb():
+    return render_template('tmb.html')
+
+@app.route('/gct')
+def gct():
+    return render_template('gct.html')
+
+@app.route('/imc')
+def imc():
+    return render_template('imc.html')
+
+@app.route('/macros')
+def macros():
+    return render_template('macros.html')
+
+@app.route('/pesoid')
+def pesoid():
+    return render_template('pesoid.html')
+
+
+
+
+
 @app.route('/calculadora', methods=['GET', 'POST'])
 def calculadora():
     resultados = {}

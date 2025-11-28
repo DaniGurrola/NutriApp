@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Calculadoras Nutricionales{% endblock %}
+
+{% block content %}
+    <div class="container my-5">
+        <h1 class="text-center text-success mb-5">Calculadoras Nutricionales</h1>
+        <div class="card mb-4 border-success">
+            <div class="card-header bg-success text-white">
+                <h2 class="h5 mb-0">3. Índice de Masa Corporal (IMC)</h2>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="pesoIMC" class="form-label text-success">Peso (kg):</label>
+                        <input type="number" id="pesoIMC" class="form-control" placeholder="Ej: 70" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="alturaIMC" class="form-label text-success">Altura (cm):</label>
+                        <input type="number" id="alturaIMC" class="form-control" placeholder="Ej: 175" required>
+                    </div>
+                </div>
+                <button onclick="calcularIMC()" class="btn btn-success w-100">Calcular IMC</button>
+                <div class="mt-3 p-3 bg-light rounded border border-success">
+                    <p class="mb-0 text-success">Resultado IMC:</p>
+                    <strong id="resultadoIMC" class="h4">0.00</strong>
+                    <span id="clasificacionIMC"></span>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        function obtenerValor(id) {
+            const valor = parseFloat(document.getElementById(id).value);
+            if (isNaN(valor)) {
+                return null;
+            }
+            return valor;
+        }
+        
+        function calcularIMC() {
+            const peso = obtenerValor('pesoIMC');
+            const alturaCm = obtenerValor('alturaIMC');
+            
+            if (!peso || !alturaCm) {
+                document.getElementById('resultadoIMC').textContent = "Error: Ingrese valores válidos.";
+                document.getElementById('clasificacionIMC').textContent = "";
+                return;
+            }
+            
+            const alturaM = alturaCm / 100;
+            const imc = peso / (alturaM * alturaM); 
+            
+            let clasificacion = '';
+            if (imc < 18.5) {
+                clasificacion = '(Bajo Peso)';
+            } else if (imc >= 18.5 && imc < 25) {
+                clasificacion = '(Peso Saludable)';
+            } else if (imc >= 25 && imc < 30) {
+                clasificacion = '(Sobrepeso)';
+            } else {
+                clasificacion = '(Obesidad)';
+            }
+
+            document.getElementById('resultadoIMC').textContent = `${imc.toFixed(2)} `;
+            document.getElementById('clasificacionIMC').textContent = clasificacion;
+        }
+    </script>
+    {% endblock %}
+    
