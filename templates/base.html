@@ -29,9 +29,10 @@
                 <ul class="navbar-nav ms-auto">
                     
                     {% if session.get('user_id') %}
-                        <li class="nav-item">
-                            <span class="nav-link">Hola, {{ session.user_name }}!</span>
-                        </li>
+                     <li class="nav-item">
+    <a class="nav-link" href="{{ url_for('perfil') }}">Hola, {{ session.user_name }}!</a>
+</li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="/logout">Cerrar Sesión</a>
                         </li>
