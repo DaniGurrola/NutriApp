@@ -28,3 +28,10 @@ Desarrollar una aplicacion movil nutricional que brinde a los usuarios herramien
 
  ![Adobe Express - file](https://github.com/user-attachments/assets/66d5af9d-f2a5-4117-bf20-b82033b77123)
 
+
+
+{% if session.get('user_id') %}
+
+ {% else %}
+
+  {% endif %}

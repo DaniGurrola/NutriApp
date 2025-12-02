@@ -27,10 +27,16 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    
+                    {% if session.get('user_id') %}
+                        <li class="nav-item">
+                            <span class="nav-link">Hola, {{ session.user_name }}!</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Cerrar Sesión</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="/recetas">Recetas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/analisis">Análisis de tus comidas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/perfil">Perfil</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Calculadoras
@@ -43,21 +49,23 @@
                             <li><a class="dropdown-item" href="/pesoid">Peso Ideal</a></li>
                         </ul>
                     </li>
-
-                    {% if session.get('user_id') %}
-                        <li class="nav-item">
-                            <span class="nav-link">Hola, {{ session.user_name }}!</span>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/logout">Cerrar Sesión</a>
-                        </li>
+                    <li class="nav-item"><a class="nav-link" href="/analisis">Análisis de tus comidas</a></li>
                     {% else %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="/login">Iniciar sesión</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/registro">Registrarse</a>
-                        </li>
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">inicio de sesion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/recetas">Recetas</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Calculadoras
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/tmb">Tasa Metabólica Basal (TMB)</a></li>
+                            <li><a class="dropdown-item" href="/gct">Gasto Calórico Total (GCT)</a></li>
+                            <li><a class="dropdown-item" href="/imc">Índice de Masa Corporal (IMC)</a></li>
+                            <li><a class="dropdown-item" href="/pesoid">Peso Ideal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/analisis">Análisis de tus comidas</a></li>
                     {% endif %}
                 </ul>
             </div>

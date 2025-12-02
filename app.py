@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, session
 import pymysql
 
 
@@ -77,17 +77,29 @@ def recetas():
 @app.route('/analisis', methods=['GET', 'POST'])
 def analisis():
     resultado = None
-
     if request.method == 'POST':
-        comida = request.form['comida']
-        calorias = int(request.form['calorias'])
-        grasas = int(request.form['grasas'])
-        azucar = int(request.form['azucar'])
+        tipo_comida = request.form['tipo_comida']
+        tamano = request.form['tamano']
+        frita = request.form['frita']
+        verduras = request.form['verduras']
+        proteinas = request.form['proteinas']
 
-        if calorias < 300 and grasas < 10 and azucar < 5:
-            resultado = f"La comida '{comida}' es saludable."
+        puntos = 0
+        if tamano == 'pequena':
+            puntos += 2
+        elif tamano == 'mediana':
+            puntos += 1
+        if frita == 'no':
+            puntos += 2
+        if verduras == 'si':
+            puntos += 2
+        if proteinas == 'si':
+            puntos += 2
+
+        if puntos >= 7:
+            resultado = f"La comida {tipo_comida} es saludable."
         else:
-            resultado = f"La comida '{comida}' no es saludable."
+            resultado = f"La comida {tipo_comida} no es tan saludable."
 
     return render_template('analisis.html', resultado=resultado)
 
